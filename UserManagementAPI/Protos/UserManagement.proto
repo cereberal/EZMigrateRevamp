@@ -1,0 +1,17 @@
+﻿syntax = "proto3";
+option csharp_namespace = "GrpcUserManagement";
+
+package  UserManagement;
+
+service UserManagementProvider {
+	rpc GetDumyCount (DumpyCountRequest) returns (DumpyCountResponse);
+
+}
+
+message DumpyCountRequest{
+	string Temp =1;
+}
+
+message DumpyCountResponse{
+	string Temp =2;
+}
